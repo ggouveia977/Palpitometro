@@ -1,0 +1,39 @@
+<mat-card class="box">
+	<mat-card-header>
+		<mat-card-title> Palpite do Jogo </mat-card-title>
+	</mat-card-header>
+	<mat-card-content class="contentCard">
+		<mat-form-field id="selecaoA">
+			<input
+				matInput
+				placeholder=""
+				type="text"
+				id="txtData"
+				disabled
+			/>
+		</mat-form-field>
+		<mat-form-field floatLabel="never" id="placarA" class="input">
+			<input matInput type="text" placeholder="0" [(ngModel)]="placarA" />
+		</mat-form-field>
+		<mat-form-field id="selecaoB">
+			<input
+				matInput
+				placeholder=""
+				type="text"
+				id="txtData2"
+				disabled
+			/>
+		</mat-form-field>
+		<mat-form-field floatLabel="never" id="placarB" class="input">
+			<input matInput type="text" placeholder="0" [(ngModel)]="placarB" />
+		</mat-form-field>
+		<button
+    mat-raised-button
+    color="warn"
+    id="btnCadastrar"
+    (click)="palpitar()"
+  >
+    Palpite
+  </button>
+	</mat-card-content>
+</mat-card>
